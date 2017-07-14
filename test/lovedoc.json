@@ -1,0 +1,9 @@
+{
+  "head": {
+    "test.css" : "prepend",
+    "test.js" : "append"
+  },
+  "body > *": {
+    "test.html" : "replaceWith"
+  }
+}

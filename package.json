@@ -1,0 +1,40 @@
+{
+  "name": "lovedoc",
+  "version": "1.0.0",
+  "description": "LOcal development of liVE projects like a DOC.",
+  "bin": {
+    "lovedoc": "bin/lovedoc.js"
+  },
+  "main": "./bin/lovedoc.js",
+  "scripts": {
+    "start": "node ./bin/lovedoc.js",
+    "test": "npm start http://koljakutschera.de 9001 test"
+  },
+  "author": "Kolja Kutschera (http://koljakutschera.de/)",
+  "license": "MIT",
+  "preferGlobal": true,
+  "dependencies": {
+    "hoxy": "^3.2.2",
+    "lodash": "^4.17.4"
+  },
+  "keywords": [
+    "lovedoc",
+    "local",
+    "live",
+    "development",
+    "production",
+    "doc",
+    "proxy",
+    "jquery",
+    "html",
+    "css",
+    "javascript",
+    "js",
+    "kolja kutschera",
+    "love"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:koljakutschera/lovedoc.git"
+  }
+}
