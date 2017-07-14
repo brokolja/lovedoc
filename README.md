@@ -4,7 +4,7 @@ LOcal development of liVE projects like a DOC.
 
 Tested: OSX
 
-Status: Alpha
+Status: Alpha - Testers welcome
 
 ## Description
 
