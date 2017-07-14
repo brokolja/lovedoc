@@ -72,7 +72,7 @@ Replace all elements which are exact children of body with the content of your l
 ```
 
 ## Getting started
-> You can see the example filestructure [repo](https://github.com/koljakutschera/lovedoc/tree/master/test)
+> You can see the example filestructure in the [repo](https://github.com/koljakutschera/lovedoc/tree/master/test)
 
 In the root of your project direcory for example:
 
