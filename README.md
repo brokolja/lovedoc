@@ -8,7 +8,7 @@ Status: Alpha
 
 ## Description
 
-Lovedoc makes it possible for you to develop local but see your changes applied to the livesite immediately. Therefore the livesite will be proxied to your localhost and you can use a jQuery like syntax to apply html,js,css files to it. The code you apply will be added to the real sourcecode of the the proxied site so you can define the order of your scripts/stylesheets and inject html exactly where you want it. Also lovedoc overlays your local directory on top of the livesites one. In other words, if a requested file doesn't exist locally, the request will transparently fall through to the livesite so you can easily replace a file requested by the livesite with your local one or maybe you can serve some new images to load them via css.
+Lovedoc makes it possible for you to develop local but see your changes applied to the livesite immediately. Therefore the livesite will be proxied to your localhost and you can use a jQuery like syntax to apply html,js,css files to it. The code you apply will be added to the real sourcecode of the the proxied site so you can define the order of your scripts/stylesheets and inject html exactly where you want it. Also lovedoc overlays your local directory on top of the livesites one. In other words, if a requested file doesn't exist locally, the request will transparently fall through to the livesite so you can easily replace a file requested by the livesite with your local one.
 
 ## Installation
 
