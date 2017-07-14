@@ -8,11 +8,11 @@ Status: Alpha
 
 ## Description
 
-Lovedoc makes it possible for you to develop local but see your changes applied to the livesite immediately. Therefore the livesite will be proxied to your localhost and you can use a jQuery like syntax to apply html,js,css files to it. The code you apply will be added to the real sourcecode of the the proxied site so you can define the order of your scripts/stylesheets and inject html exactly where you want it. Also lovedoc overlays your local directory on top of the livesites one. In other words, if a requested file doesn't exist locally, the request will transparently fall through to the livesite so you can easily replace a file requested by the livesite with your local one.
+Lovedoc makes it possible for you to develop local but see your changes applied to the livesite immediately. Therefore the livesite will be proxied to your localhost and you can use a jQuery like syntax to apply html,js,css files to it. The code you apply will be added to the real sourcecode of the the proxied site so you can define the order of your scripts/stylesheets and inject html exactly where you want it. Also lovedoc overlays your local directory on top of the livesites one so you can load resources like images from your local directory or overwrite resources from the livesite with local ones. In other words, if a local file exists it will be requested - If not the one from the livesite will be served. 
 
 ## How it works
 
-After installation you can use lovedoc in your terminal. Simply put a lovedoc.json file in some folder and it will be read by lovedoc when started. Depending on the operations you defined in lovedoc.json you will see them applied to the livesite on your localhost. Also the contents of the folder where you started lovedoc will be served over the livesite.
+After installation you can use lovedoc in your terminal. Simply put a lovedoc.json file in some directory and it will be read by lovedoc when started. Depending on the operations you defined in lovedoc.json you will see them applied to the livesite on your localhost at a predefined port. Also your local folder will overlay the livesite.
 
 ## Installation
 
@@ -46,7 +46,6 @@ DIRECTORY: Local directory to serve files from. Without / at begin and end. Defa
 
 
 ## Usage lovedoc.json
-> Hint: Your local directory will overlay the livesite. If a local file exists it will be requested - If not the one from the livesite will be served.
 
 A lovedoc operation is made of 3 parts: selector, action, file.
 Selector and action are based on a jQuery like syntax. File is a path to a local file on your system. If file extension is .html the plain content of it will be injected. If file extension is .js/.css a style/script-tag will be injected with its src pointing to your lokal file which is served by lovedoc.
