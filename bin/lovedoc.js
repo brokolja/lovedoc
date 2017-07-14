@@ -94,7 +94,7 @@ proxy.intercept({
         if (tag === 'style') {
           htmlContent = '<link rel="stylesheet" type="text/css" href="/'+ (directory !== '' ? directory + '/' : '') + file +'">'
         } else if (tag === 'script') {
-          htmlContent = '<script type="text/javascript" charset="utf-8" src="/'+ (directory !== '' ? directory + '/' : '') + file +'"></script>';
+          htmlContent = '<script type="text/javascript" src="/'+ (directory !== '' ? directory + '/' : '') + file +'"></script>';
         } else if (tag === 'html') {
           fileContent = fs.readFileSync(jsonPath + '/' + file).toString();
           htmlContent = fileContent;
