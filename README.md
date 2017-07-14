@@ -29,7 +29,7 @@ sudo rm -rf lovedoc # we dont need the repo after npm install...
 Uninstallation
 
 ```shell
-sudo npm uninstall -g
+sudo npm uninstall lovedoc -g
 ```
 
 ## Usage lovedoc
