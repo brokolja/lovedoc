@@ -2,7 +2,7 @@
 
 LOcal development of liVE projects like a DOC.
 
-Semver: 0.1.0
+Semver: 0.1.1
 
 ## Description
 
@@ -21,7 +21,7 @@ git clone https://github.com/koljakutschera/lovedoc
 cd lovedoc/
 sudo npm install -g
 cd ..
-sudo rm -rf lovedoc # we dont need the repo after npm install...
+sudo rm -rf lovedoc # we dont need the repo after global npm install...
 ```
 
 Installation via npm:

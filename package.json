@@ -1,6 +1,6 @@
 {
   "name": "lovedoc",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "LOcal development of liVE projects like a DOC.",
   "bin": {
     "lovedoc": "bin/lovedoc.js"
