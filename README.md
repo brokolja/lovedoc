@@ -2,17 +2,15 @@
 
 LOcal development of liVE projects like a DOC.
 
-Tested: OSX
-
-Status: Alpha - Testers welcome
+Semver: 0.1.0
 
 ## Description
 
-Lovedoc makes it possible for you to develop local but see your changes applied to the livesite immediately. Therefore the livesite will be proxied to your localhost and you can use a jQuery like syntax to apply html,js,css files to it. The code you apply will be added to the real sourcecode by manipulation of the http-response so you can define the order of your scripts/stylesheets and inject html exactly where you want it. Also lovedoc overlays your local directory on top of the livesites one so you can load resources like images from your local directory or overwrite resources from the livesite with local ones. You can even overlay all your sites live assets with local assets and edit them without uploading/pushing on every change.
+Lovedoc makes it possible for you to develop local but see your changes applied to the livesite immediately. The code you apply will be added to the real sourcecode by manipulation of the http-response so you can define the order of your scripts/stylesheets and inject html exactly where you want it. Also lovedoc overlays your local directory on top of the livesites one so you can load resources like images from your local directory or overwrite resources from the livesite with local ones. You can even overlay all your sites live assets with local assets and edit them without uploading on every change.
 
 ## How it works
 
-After installation you can use lovedoc in your terminal. Simply put a lovedoc.json file in some directory and it will be read by lovedoc when started. Depending on the operations you defined in lovedoc.json you will see them applied to the livesite on your localhost at a predefined port. Also your local folder will overlay the livesite.
+After installation you can use lovedoc in your terminal. Simply put a lovedoc.json file in some directory and it will be read by lovedoc when started. Depending on the operations you defined in lovedoc.json you will see them applied to the livesite on your localhost at a predefined port. Also your local folder will overlay the livesite. 
 
 ## Installation
 
@@ -24,6 +22,12 @@ cd lovedoc/
 sudo npm install -g
 cd ..
 sudo rm -rf lovedoc # we dont need the repo after npm install...
+```
+
+Installation via npm:
+
+```shell
+Comming soon...
 ```
 
 Uninstallation
@@ -108,6 +112,10 @@ lovedoc http://koljakutschera.de 9001
 If you get redirected from localhost maybe this is because REMOTEURL does not exactly match the final url of your livesite. This happens for example if you use http:// in REMOTEURL but the livesite does an auto-redirect to https://. Simply use the final url as argument for lovedoc to fix this.
 
 If you really want to add the same filenames within the same selector to a lovedoc.json file simply add some whitespace (which gets removed by lovedoc) to the filename so its valid json.
+
+## Tested on:
+
+OSX
 
 ## Licensing
 
