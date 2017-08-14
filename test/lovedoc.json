@@ -3,7 +3,7 @@
     "test.css" : "prepend",
     "test.js" : "append"
   },
-  "body > *": {
+  "main h1": {
     "test.html" : "replaceWith"
   }
 }

@@ -53,9 +53,9 @@ console.log('Hey doc, patient: '+ remoteurl + ' has an op at: localhost:' + loca
 proxy.intercept({
   phase: 'request',
 }, function (req, resp, cycle) {
-  if (fs.existsSync(cwd + req.url)){
+  if (fs.existsSync(cwd + (directory !== '' ? '/' + directory : '') + req.url)){
     return cycle.serve({
-      path: cwd + req.url,
+      path: cwd + (directory !== '' ? '/' + directory : '') + req.url,
       strategy: 'overlay'
     });
   }

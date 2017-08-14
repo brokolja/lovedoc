@@ -2,7 +2,7 @@
 
 LOcal development of liVE projects like a DOC.
 
-Semver: 0.1.1
+Semver: 0.1.2
 
 ## Description
 
