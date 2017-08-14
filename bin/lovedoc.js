@@ -28,6 +28,7 @@ if (!process.argv[2] || !process.argv[3]) {
 }
 
 if (process.argv[4]) {
+  
   if (fs.existsSync(cwd + '/' + process.argv[4])) {
     directory = process.argv[4];
     jsonPath = cwd + '/' + process.argv[4];
@@ -53,9 +54,9 @@ console.log('Hey doc, patient: '+ remoteurl + ' has an op at: localhost:' + loca
 proxy.intercept({
   phase: 'request',
 }, function (req, resp, cycle) {
-  if (fs.existsSync(cwd + (directory !== '' ? '/' + directory : '') + req.url)){
+  if (fs.existsSync(cwd + req.url)){
     return cycle.serve({
-      path: cwd + (directory !== '' ? '/' + directory : '') + req.url,
+      path: cwd + req.url,
       strategy: 'overlay'
     });
   }
