@@ -1,16 +1,16 @@
 # lovedoc
 
-LOcal development of liVE projects like a DOC.
+LOcal development of liVE-sites like a DOC.
 
-Semver: 0.1.3
+Semver: 0.1.4
 
 ## Description
 
-Lovedoc makes it possible for you to develop local but see your changes applied to the livesite immediately. The code you apply will be added to the real sourcecode by manipulation of the http-response so you can define the order of your scripts/stylesheets and inject html exactly where you want it. Also lovedoc overlays your local directory on top of the livesites one so you can load resources like images from your local directory or overwrite resources from the livesite with local ones. You can even overlay all your sites live assets with local assets and edit them without uploading on every change.
+Lovedoc makes it possible for you to develop local but see your changes applied to the live-site immediately. The code you apply will be added to the real sourcecode by manipulation of the http-response so you can define the order of your scripts/stylesheets and inject html exactly where you want it. Also lovedoc overlays your local directory on top of the live-sites one so you can load resources like images from your local directory or overwrite resources from the live-site with local ones. You can even overlay all your sites live assets with local assets and edit them without uploading on every change.
 
 ## How it works
 
-After installation you can use lovedoc in your terminal. Simply put a lovedoc.json file in some directory and it will be read by lovedoc when started. Depending on the operations you defined in lovedoc.json you will see them applied to the livesite on your localhost at a predefined port. Also your local folder will overlay the livesite. 
+After installation you can use lovedoc in your terminal. Simply put a lovedoc.json file in some directory and it will be read by lovedoc when started. Depending on the operations you defined in lovedoc.json you will see them applied to the live-site on your localhost at a predefined port. Also your local folder will overlay the live-site. 
 
 ## Installation
 
@@ -42,9 +42,9 @@ sudo npm uninstall lovedoc -g
 lovedoc [REMOTEURL|Required] [LOCALPORT|Required] [DIRECTORY|Optional]
 ```
 
-REMOTEURL: Full url of the livesite to work on
+REMOTEURL: Url/Domain of the live-site to work on (no subfolders, you can navigate the proxied site)
 
-LOCALPORT: Local port to proxy the livesite 
+LOCALPORT: Local port to proxy the live-site to
 
 DIRECTORY: Local directory to serve files from. Without / at begin and end. Default: cwd
 
