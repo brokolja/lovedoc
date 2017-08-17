@@ -72,7 +72,8 @@ proxy.intercept({
     lovedoc = requireUncached(jsonPath + '/lovedoc.json');
   } catch (err) {
     console.log('lovedoc.json invalid json!', err)
-  }    
+  }
+  resp.$('base').remove();
   _.each(lovedoc, function (actions, selector) {
     _.each(actions, function (action, file) {
       var action = action.replace(/\s/g, ""); // Hint: You can use whitespace in lovedoc.json to use same values multiple times
