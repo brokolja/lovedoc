@@ -99,7 +99,7 @@ In the root of your project direcory for example:
 }
 ```
 
-3. Open terminal and run lovedoc
+3. Open terminal and run lovedoc in your project directory
 
 ```shell
 lovedoc http://koljakutschera.de 9001
